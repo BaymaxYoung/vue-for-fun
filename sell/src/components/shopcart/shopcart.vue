@@ -1,6 +1,6 @@
 <template>
   <div class="shopcart">
-    <div class="content" @click="toggleList">
+    <div class="content">
       <div class="content-left">
         <div class="logo-wrapper">
           <div class="logo" :class="{'highlight':totalCount>0}">
@@ -11,7 +11,7 @@
         <div class="price" :class="{'highlight':totalPrice>0}">￥{{totalPrice}}</div>
         <div class="desc">另需配送费￥{{deliveryPrice}}元</div>
       </div>
-      <div class="content-right" @click.stop.prevent="pay">
+      <div class="content-right">
         <div class="pay" :class="payClass">
           {{payDesc}}
         </div>
